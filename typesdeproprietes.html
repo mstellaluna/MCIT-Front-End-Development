@@ -1,0 +1,1444 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta author="Mary Mule">
+
+  <!--SITE FAVICON-->
+  <link rel="shortcut icon" href="./img/favicon.jpg" type="image/x-icon">
+
+  <!-- BOOTSTRAP 4 AND CUSTOM CSS FILE IMPORT-->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- FontAwesome CDN-->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css"
+    integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+
+  <!-- Google Font Import-->
+  <link href="https://fonts.googleapis.com/css?family=Great+Vibes|Lato" rel="stylesheet">
+
+  <!--SweetAlert JS Import-->
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+  <title>Belle Maison</title>
+</head>
+
+<body>
+  <header>
+    <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="menu.html"> Belle Maison
+        <div class="row">
+          <div class="datetime">
+            <script type="text/javascript" language="javascript">
+              var d = new Date();
+              var day = d.getDate();
+              var month = d.getMonth() + 1;
+              var year = d.getFullYear();
+              var hours = d.getHours();
+              var minutes = d.getMinutes();
+              var date = day + "/" + month + "/" + year;
+              var time = hours + ":" + minutes;
+              document.write("Current date and time: " + date + " " + time);
+            </script>
+          </div>
+        </div>
+      </a>
+
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+        aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav ml-auto ">
+          <a class="nav-item nav-link ml-auto" href="menu.html">Home</a>
+          <a class="nav-item nav-link ml-auto active" href="#">Buy<span class="sr-only">(current)</span></a>
+          <a class="nav-item nav-link ml-auto" href="calculhypotheque.html">Tools</a>
+          <a class="nav-item nav-link ml-auto" href="infoclients.html">Contact Us</a>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <section id="hero-listings">
+    <h3 class="hero-title">Featured Properties</h3>
+    <span class="hero-byline">Newly listed moved in ready homes suited for every budget.</span>
+    <a class="btn btn-full" href="#">I’m hungry</a>
+    <a class="btn btn-ghost" href="#">Show me more</a>
+  </section>
+
+  <!-- Single Family Homes Card deck -->
+  <div class="card-deck">
+
+    <!-- Card -->
+    <div class="card mb-4">
+
+      <!--Card image-->
+      <div class="view overlay">
+        <img class="card-img-top" src="./img/houses/single-family/st-vital/st-vital-frontage.jpg"
+          alt="detached-bungalow-rue-saint-vital">
+        <a href="#!">
+          <div class="mask rgba-white-slight"></div>
+        </a>
+        <div class="property-type">
+          <h4>budget friendly</h4>
+        </div>
+      </div>
+
+      <!--Card content-->
+      <div class="card-body">
+
+        <!--Title-->
+        <h4 class="card-title">Montreal-North (Montreal)</h4>
+        <!--Text-->
+        <p class="card-text">10673, boulevard Saint-Vital</p>
+        <p class="price">$194,900</p>
+        <button type="button" class="btn details-btn btn-md" data-toggle="modal"
+          data-target="#stvital-details">Details</button>
+        <!--Property Listing Details Modal-->
+        <!-- Modal -->
+        <div class="modal fade" id="stvital-details" tabindex="-1" role="dialog" aria-labelledby="stvital-details"
+          aria-hidden="true">
+          <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+              <div class="modal-body">
+                <div class="row">
+                  <div class="col-lg-5">
+                    <!--Carousel Wrapper-->
+                    <div id="carousel-thumb" class="carousel slide carousel-fade carousel-thumbnails"
+                      data-ride="carousel">
+                      <!--Slides-->
+                      <div class="carousel-inner" role="listbox">
+                        <div class="carousel-item active">
+                          <img class="d-block w-100" src="./img/houses/single-family/st-vital/st-vital-living-room.jpg"
+                            alt="First slide">
+                        </div>
+                        <div class="carousel-item">
+                          <img class="d-block w-100" src="./img/houses/single-family/st-vital/st-vital-kitchen.jpg"
+                            alt="Second slide">
+                        </div>
+                        <div class="carousel-item">
+                          <img class="d-block w-100" src="./img/houses/single-family/st-vital/st-vital-backyard.jpg"
+                            alt="Third slide">
+                        </div>
+                      </div>
+                      <!--/.Slides-->
+                      <!--Controls-->
+                      <a class="carousel-control-prev" href="#carousel-thumb" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                      </a>
+                      <a class="carousel-control-next" href="#carousel-thumb" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                      </a>
+                    </div>
+                    <!--/.Carousel Wrapper-->
+                  </div>
+                  <div class="col-lg-7">
+                    <h4 class="h4-responsive product-name">
+                      <strong>10673, boulevard Saint-Vital</strong>
+                    </h4>
+                     <h2 class="h2-responsive">
+                      <span class="price-text">
+                        <strong>$194,900</strong>
+                      </span>
+                    </h2> 
+                  <!--Property Details Table-->
+                  <h3 class="h3-responsive">
+                      <span class="features">
+                        <strong>Features</strong>
+                      </span>
+                  <div class="summary">
+                    <span class="item">7 Rooms</span>
+                    <span class="item">2+0 Bedrooms</span>
+                    <span class="item">1+0 Bathroom/Powder Room</span>
+                  </div>
+                  <table>
+                    <tr>
+                      <td>Building Style</td>
+                      <td class="last-child">
+                        <span>Bungalow, Detached</span>
+                      </td>
+                    </tr>
+                    <tr>
+                        <td>Year Built</td>
+                        <td class="last-child">
+                          <span>1923</span>
+                        </td>
+                      </tr>
+                      <tr>
+                          <td>Lot Area</td>
+                          <td class="last-child">
+                            <span>4,500 sqft</span>
+                          </td>
+                        </tr>
+                  </table>
+                    <!-- Close modal button -->
+                    <div class="card-body">
+                      <div class="text-md-left">
+                        <button type="button" class="btn btn-secondary close-modal" data-dismiss="modal">Close</button>
+                      </div>
+                    </div>
+                    <!-- /.Close modal button -->
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Model End-->
+        <div class="icons">
+          <p><i class="fas fa-bed"></i> 2</p>
+          <p><i><i class="fas fa-bath"></i></i> 1</p>
+
+        </div>
+
+      </div>
+
+    </div>
+    <!-- Card -->
+
+    <!-- Card -->
+    <div class="card mb-4">
+
+      <!--Card image-->
+      <div class="view overlay">
+        <img class="card-img-top" src="./img/houses/single-family/rue-balzac/home-bungalow-frontage.jpg"
+          alt="detached-bungalow-ave-balzac">
+        <a href="#!">
+          <div class="mask rgba-white-slight"></div>
+        </a>
+        <div class="property-type">
+          <h4>Detached Bungalow</h4>
+        </div>
+      </div>
+
+      <!--Card content-->
+      <div class="card-body">
+
+        <!--Title-->
+        <h4 class="card-title">Montreal-North (Montreal)</h4>
+        <!--Text-->
+        <p class="card-text">11811, Avenue Balzac</p>
+        <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
+        <p class="price">$374,900</p>
+        <button type="button" class="btn details-btn btn-md" data-toggle="modal"
+        data-target="#avebalzac-details">Details</button>
+        <div class="modal fade" id="avebalzac-details" tabindex="-1" role="dialog" aria-labelledby="avebalzac-details"
+          aria-hidden="true">
+          <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+              <div class="modal-body">
+                <div class="row">
+                  <div class="col-lg-5">
+                    <!--Carousel Wrapper-->
+                    <div id="carousel-thumb" class="carousel slide carousel-fade carousel-thumbnails"
+                      data-ride="carousel">
+                      <!--Slides-->
+                      <div class="carousel-inner" role="listbox">
+                        <div class="carousel-item active">
+                          <img class="d-block w-100" src="./img/houses/single-family/rue-balzac/balzac-living-room.jpg"
+                            alt="First slide">
+                        </div>
+                        <div class="carousel-item">
+                          <img class="d-block w-100" src="./img/houses/single-family/rue-balzac/balzac-kitchen.jpg"
+                            alt="Second slide">
+                        </div>
+                        <div class="carousel-item">
+                          <img class="d-block w-100" src="./img/houses/single-family/rue-balzac/balzac-backyard.jpg"
+                            alt="Third slide">
+                        </div>
+                      </div>
+                      <!--/.Slides-->
+                      <!--Controls-->
+                      <a class="carousel-control-prev" href="#carousel-thumb" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                      </a>
+                      <a class="carousel-control-next" href="#carousel-thumb" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                      </a>
+                    </div>
+                    <!--/.Carousel Wrapper-->
+                  </div>
+                  <div class="col-lg-7">
+                    <h4 class="h4-responsive product-name">
+                      <strong>11811, Avenue Balzac</strong>
+                    </h4>
+                     <h2 class="h2-responsive">
+                      <span class="price-text">
+                        <strong>$374, 900</strong>
+                      </span>
+                    </h2> 
+                  <!--Property Details Table-->
+                  <h3 class="h3-responsive">
+                      <span class="features">
+                        <strong>Features</strong>
+                      </span>
+                  <div class="summary">
+                    <span class="item">11 Rooms</span>
+                    <span class="item">4+0 Bedrooms</span>
+                    <span class="item">1+1 Bathroom/Powder Room</span>
+                  </div>
+                  <table>
+                    <tr>
+                      <td>Building Style</td>
+                      <td class="last-child">
+                        <span>Bungalow, Detached</span>
+                      </td>
+                    </tr>
+                    <tr>
+                        <td>Year Built</td>
+                        <td class="last-child">
+                          <span>1956</span>
+                        </td>
+                      </tr>
+                      <tr>
+                          <td>Lot Area</td>
+                          <td class="last-child">
+                            <span>6,032 sqft</span>
+                          </td>
+                        </tr>
+                        <tr>
+                            <td>Additional features</td>
+                            <td class="last-child">
+                              <span>Basement 6 feet or +</span>
+                            </td>
+                          </tr>
+                  </table>
+                    <!-- Close modal button -->
+                    <div class="card-body">
+                      <div class="text-md-left">
+                        <button type="button" class="btn btn-secondary close-modal" data-dismiss="modal">Close</button>
+                      </div>
+                    </div>
+                    <!-- /.Close modal button -->
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Model End-->
+        <div class="icons">
+          <p><i class="fas fa-bed"></i> 3</p>
+          <p><i><i class="fas fa-bath"></i></i> 1</p>
+
+        </div>
+
+      </div>
+
+    </div>
+    <!-- Card -->
+    <!-- Card -->
+    <div class="card mb-4">
+
+      <!--Card image-->
+      <div class="view overlay">
+        <img class="card-img-top" src="./img/houses/single-family/rue-gouin/rue-gouin-front.jpg"
+          alt="detached-bungalow-rue-gouin">
+        <a href="#!">
+          <div class="mask rgba-white-slight"></div>
+        </a>
+        <div class="property-type">
+          <h4>prestigious waterfront</h4>
+        </div>
+      </div>
+
+      <!--Card content-->
+      <div class="card-body">
+
+        <!--Title-->
+        <h4 class="card-title">Montreal-North (Montreal)</h4>
+        <!--Text-->
+        <p class="card-text">6245, boulevard Gouin Est</p>
+        <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
+        <p class="price">$1,395,000</p>
+        <button type="button" class="btn details-btn btn-md" data-toggle="modal"
+        data-target="#avegouin-details">Details</button>
+         <!-- Modal -->
+         <div class="modal fade" id="avegouin-details" tabindex="-1" role="dialog" aria-labelledby="avegouin-details"
+         aria-hidden="true">
+         <div class="modal-dialog modal-lg" role="document">
+           <div class="modal-content">
+             <div class="modal-body">
+               <div class="row">
+                 <div class="col-lg-5">
+                   <!--Carousel Wrapper-->
+                   <div id="carousel-thumb" class="carousel slide carousel-fade carousel-thumbnails"
+                     data-ride="carousel">
+                     <!--Slides-->
+                     <div class="carousel-inner" role="listbox">
+                       <div class="carousel-item active">
+                         <img class="d-block w-100" src="./img/houses/single-family/rue-gouin/gouin-family-room.jpg"
+                           alt="First slide">
+                       </div>
+                       <div class="carousel-item">
+                         <img class="d-block w-100" src="./img/houses/single-family/rue-gouin/gouin-kitchen.jpg"
+                           alt="Second slide">
+                       </div>
+                       <div class="carousel-item">
+                         <img class="d-block w-100" src="./img/houses/single-family/rue-gouin/gouin-backyard.jpg"
+                           alt="Third slide">
+                       </div>
+                     </div>
+                     <!--/.Slides-->
+                     <!--Controls-->
+                     <a class="carousel-control-prev" href="#carousel-thumb" role="button" data-slide="prev">
+                       <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                       <span class="sr-only">Previous</span>
+                     </a>
+                     <a class="carousel-control-next" href="#carousel-thumb" role="button" data-slide="next">
+                       <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                       <span class="sr-only">Next</span>
+                     </a>
+                   </div>
+                   <!--/.Carousel Wrapper-->
+                 </div>
+                 <div class="col-lg-7">
+                   <h4 class="h4-responsive product-name">
+                     <strong>6245, boulevard Gouin Est</strong>
+                   </h4>
+                    <h2 class="h2-responsive">
+                     <span class="price-text">
+                       <strong>$1,395,000</strong>
+                     </span>
+                   </h2> 
+                 <!--Property Details Table-->
+                 <h3 class="h3-responsive">
+                     <span class="features">
+                       <strong>Features</strong>
+                     </span>
+                 <div class="summary">
+                   <span class="item">12 Rooms</span>
+                   <span class="item">4+0 Bedrooms</span>
+                   <span class="item">3+1 Bathroom/Powder Room</span>
+                 </div>
+                 <table>
+                   <tr>
+                     <td>Building Style</td>
+                     <td class="last-child">
+                       <span>Two or more storey, Detached</span>
+                     </td>
+                   </tr>
+                   <tr>
+                       <td>Year Built</td>
+                       <td class="last-child">
+                         <span>2004</span>
+                       </td>
+                     </tr>
+                     <tr>
+                         <td>Lot Area</td>
+                         <td class="last-child">
+                           <span>14,271 sqft</span>
+                         </td>
+                       </tr>
+                       <tr>
+                          <td>Parking</td>
+                          <td class="last-child">
+                            <span>Driveway (6), Garage (2)</span>
+                          </td>
+                        </tr>
+                 </table>
+                   <!-- Close modal button -->
+                   <div class="card-body">
+                     <div class="text-md-left">
+                       <button type="button" class="btn btn-secondary close-modal" data-dismiss="modal">Close</button>
+                     </div>
+                   </div>
+                   <!-- /.Close modal button -->
+                 </div>
+               </div>
+             </div>
+           </div>
+         </div>
+       </div>
+       <!-- Model End-->
+        <div class="icons">
+          <p><i class="fas fa-bed"></i> 4</p>
+          <p><i><i class="fas fa-bath"></i></i> 4</p>
+
+        </div>
+
+      </div>
+
+    </div>
+    <!-- Card -->
+
+  </div>
+  <!-- Single Family Homes Card deck -->
+  <!-- Condo Card deck -->
+  <div class="card-deck">
+
+    <!-- Card -->
+    <div class="card mb-4">
+
+      <!--Card image-->
+      <div class="view overlay">
+        <img class="card-img-top" src="./img/houses/condo/de-la-montagne/condo-frontage.jpg"
+          alt="condo-rue-de-la-montagne">
+        <a href="#!">
+          <div class="mask rgba-white-slight"></div>
+        </a>
+        <div class="property-type">
+          <h4>budget friendly</h4>
+        </div>
+      </div>
+
+      <!--Card content-->
+      <div class="card-body">
+
+        <!--Title-->
+        <h4 class="card-title">Ville-Marie (Montreal)</h4>
+        <h3 class="card-title">Golden Square Mile Neighbourhood</h3>
+        <!--Text-->
+        <p class="card-text">1100, Rue de la Montagne, apt. 610</p>
+        <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
+        <p class="price">$196,100</p>
+        <button type="button" class="btn details-btn btn-md" data-toggle="modal"
+        data-target="#delamontagne-details">Details</button>
+            <!-- Modal -->
+            <div class="modal fade" id="delamontagne-details" tabindex="-1" role="dialog" aria-labelledby="delamontagne-details"
+            aria-hidden="true">
+            <div class="modal-dialog modal-lg" role="document">
+              <div class="modal-content">
+                <div class="modal-body">
+                  <div class="row">
+                    <div class="col-lg-5">
+                      <!--Carousel Wrapper-->
+                      <div id="carousel-thumb" class="carousel slide carousel-fade carousel-thumbnails"
+                        data-ride="carousel">
+                        <!--Slides-->
+                        <div class="carousel-inner" role="listbox">
+                          <div class="carousel-item active">
+                            <img class="d-block w-100" src="./img/houses/condo/de-la-montagne/de-la-montagne-living-room.jpg"
+                              alt="First slide">
+                          </div>
+                          <div class="carousel-item">
+                            <img class="d-block w-100" src="./img/houses/condo/de-la-montagne/de-la-montagne-bathroom.jpg"
+                              alt="Second slide">
+                          </div>
+                          <div class="carousel-item">
+                            <img class="d-block w-100" src="./img/houses/condo/de-la-montagne/de-la-montagne-common-area.jpg"
+                              alt="Third slide">
+                          </div>
+                        </div>
+                        <!--/.Slides-->
+                        <!--Controls-->
+                        <a class="carousel-control-prev" href="#carousel-thumb" role="button" data-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#carousel-thumb" role="button" data-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="sr-only">Next</span>
+                        </a>
+                      </div>
+                      <!--/.Carousel Wrapper-->
+                    </div>
+                    <div class="col-lg-7">
+                      <h4 class="h4-responsive product-name">
+                        <strong>1100, Rue de la Montagne, apt.610</strong>
+                      </h4>
+                       <h2 class="h2-responsive">
+                        <span class="price-text">
+                          <strong>$196,100</strong>
+                        </span>
+                      </h2> 
+                    <!--Property Details Table-->
+                    <h3 class="h3-responsive">
+                        <span class="features">
+                          <strong>Features</strong>
+                        </span>
+                    <div class="summary">
+                      <span class="item">3 Rooms</span>
+                      <span class="item">1+0 Bedrooms</span>
+                      <span class="item">1+0 Bathroom/Powder Room</span>
+                    </div>
+                    <table>
+                      <tr>
+                        <td>Condominium Type</td>
+                        <td class="last-child">
+                          <span>Divided</span>
+                        </td>
+                      </tr>
+                      <tr>
+                          <td>Year Built</td>
+                          <td class="last-child">
+                            <span>2008</span>
+                          </td>
+                        </tr>
+                        <tr>
+                            <td>Net Area</td>
+                            <td class="last-child">
+                              <span>419 sqft</span>
+                            </td>
+                          </tr>
+                          <tr>
+                             <td>Pool</td>
+                             <td class="last-child">
+                               <span>Heated, Indoor</span>
+                             </td>
+                           </tr>
+                    </table>
+                      <!-- Close modal button -->
+                      <div class="card-body">
+                        <div class="text-md-left">
+                          <button type="button" class="btn btn-secondary close-modal" data-dismiss="modal">Close</button>
+                        </div>
+                      </div>
+                      <!-- /.Close modal button -->
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Model End-->
+        <div class="icons">
+          <p><i class="fas fa-bed"></i> 1</p>
+          <p><i><i class="fas fa-bath"></i></i> 1</p>
+
+        </div>
+
+      </div>
+
+    </div>
+    <!-- Card -->
+
+    <!-- Card -->
+    <div class="card mb-4">
+
+      <!--Card image-->
+      <div class="view overlay">
+        <img class="card-img-top" src="./img/houses/condo/rue-montcalm/rue-montcalm-frontage.jpg"
+          alt="condo-rue-montcalm">
+        <a href="#!">
+          <div class="mask rgba-white-slight"></div>
+        </a>
+        <div class="property-type">
+          <h4>New Construction</h4>
+        </div>
+      </div>
+
+      <!--Card content-->
+      <div class="card-body">
+
+        <!--Title-->
+        <h4 class="card-title">Ville-Marie (Montreal)</h4>
+        <h3 class="card-title">Village Neighbourhood</h3>
+        <!--Text-->
+        <p class="card-text">1170, Rue Montcalm, apt. 208</p>
+        <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
+        <p class="price">$347,161 +GST/QST</p>
+        <button type="button" class="btn details-btn btn-md" data-toggle="modal"
+        data-target="#montcalm-details" >Details</button>
+         <!-- Modal -->
+         <div class="modal fade" id="montcalm-details" tabindex="-1" role="dialog" aria-labelledby="montcalm-details"
+         aria-hidden="true">
+         <div class="modal-dialog modal-lg" role="document">
+           <div class="modal-content">
+             <div class="modal-body">
+               <div class="row">
+                 <div class="col-lg-5">
+                   <!--Carousel Wrapper-->
+                   <div id="carousel-thumb" class="carousel slide carousel-fade carousel-thumbnails"
+                     data-ride="carousel">
+                     <!--Slides-->
+                     <div class="carousel-inner" role="listbox">
+                       <div class="carousel-item active">
+                         <img class="d-block w-100" src="./img/houses/condo/rue-montcalm/rue-montcalm-dining-room.jpg"
+                           alt="First slide">
+                       </div>
+                       <div class="carousel-item">
+                         <img class="d-block w-100" src="./img/houses/condo/rue-montcalm/rue-montcalm-kitchen.jpg"
+                           alt="Second slide">
+                       </div>
+                       <div class="carousel-item">
+                         <img class="d-block w-100" src="./img/houses/condo/rue-montcalm/rue-montcalm-common-area.jpg"
+                           alt="Third slide">
+                       </div>
+                     </div>
+                     <!--/.Slides-->
+                     <!--Controls-->
+                     <a class="carousel-control-prev" href="#carousel-thumb" role="button" data-slide="prev">
+                       <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                       <span class="sr-only">Previous</span>
+                     </a>
+                     <a class="carousel-control-next" href="#carousel-thumb" role="button" data-slide="next">
+                       <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                       <span class="sr-only">Next</span>
+                     </a>
+                   </div>
+                   <!--/.Carousel Wrapper-->
+                 </div>
+                 <div class="col-lg-7">
+                   <h4 class="h4-responsive product-name">
+                     <strong>1170, Rue Montcalm, apt. 208</strong>
+                   </h4>
+                    <h2 class="h2-responsive">
+                     <span class="price-text">
+                       <strong>$347,161 +GST/QST</strong>
+                     </span>
+                   </h2> 
+                 <!--Property Details Table-->
+                 <h3 class="h3-responsive">
+                     <span class="features">
+                       <strong>Features</strong>
+                     </span>
+                 <div class="summary">
+                   <span class="item">4 Rooms</span>
+                   <span class="item">2+0 Bedrooms</span>
+                   <span class="item">1+0 Bathroom/Powder Room</span>
+                 </div>
+                 <table>
+                   <tr>
+                     <td>Condominium Type</td>
+                     <td class="last-child">
+                       <span>Divided</span>
+                     </td>
+                   </tr>
+                   <tr>
+                       <td>Year Built</td>
+                       <td class="last-child">
+                         <span>To be built, New</span>
+                       </td>
+                     </tr>
+                     <tr>
+                         <td>Net Area</td>
+                         <td class="last-child">
+                           <span>735 sqft</span>
+                         </td>
+                       </tr>
+                 </table>
+                   <!-- Close modal button -->
+                   <div class="card-body">
+                     <div class="text-md-left">
+                       <button type="button" class="btn btn-secondary close-modal" data-dismiss="modal">Close</button>
+                     </div>
+                   </div>
+                   <!-- /.Close modal button -->
+                 </div>
+               </div>
+             </div>
+           </div>
+         </div>
+       </div>
+       <!-- Model End-->
+        <div class="icons">
+          <p><i class="fas fa-bed"></i> 3</p>
+          <p><i><i class="fas fa-bath"></i></i> 1</p>
+
+        </div>
+
+      </div>
+
+    </div>
+    <!-- Card -->
+    <!-- Card -->
+    <div class="card mb-4">
+
+      <!--Card image-->
+      <div class="view overlay">
+        <img class="card-img-top" src="./img/houses/condo/boul-robert-bourassa/boul-rober-bourassa-frontage.jpg"
+          alt="condo-boul-robert-bourassa">
+        <a href="#!">
+          <div class="mask rgba-white-slight"></div>
+        </a>
+        <div class="property-type">
+          <h4>penthouse</h4>
+        </div>
+      </div>
+
+      <!--Card content-->
+      <div class="card-body">
+
+        <!--Title-->
+        <h4 class="card-title">Ville-Marie (Montreal)</h4>
+        <h3>Central West Neighbourhood</h3>
+        <!--Text-->
+        <p class="card-text">1225, Robert-Bourassa, PH-3001</p>
+        <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
+        <p class="price">$3, 099,000</p>
+        <button type="button" class="btn details-btn btn-md" data-toggle="modal"
+        data-target="#robertbourassa-details">Details</button>
+        <!-- Modal -->
+        <div class="modal fade" id="robertbourassa-details" tabindex="-1" role="dialog" aria-labelledby="robertbourassa-details"
+        aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+          <div class="modal-content">
+            <div class="modal-body">
+              <div class="row">
+                <div class="col-lg-5">
+                  <!--Carousel Wrapper-->
+                  <div id="carousel-thumb" class="carousel slide carousel-fade carousel-thumbnails"
+                    data-ride="carousel">
+                    <!--Slides-->
+                    <div class="carousel-inner" role="listbox">
+                      <div class="carousel-item active">
+                        <img class="d-block w-100" src="./img/houses/condo/boul-robert-bourassa/robert-bourassa-dining-room.jpg"
+                          alt="First slide">
+                      </div>
+                      <div class="carousel-item">
+                        <img class="d-block w-100" src="./img/houses/condo/boul-robert-bourassa/robert-bourassa-kitchen.jpg"
+                          alt="Second slide">
+                      </div>
+                      <div class="carousel-item">
+                        <img class="d-block w-100" src="./img/houses/condo/boul-robert-bourassa/robert-bourassa-pool.jpg"
+                          alt="Third slide">
+                      </div>
+                    </div>
+                    <!--/.Slides-->
+                    <!--Controls-->
+                    <a class="carousel-control-prev" href="#carousel-thumb" role="button" data-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carousel-thumb" role="button" data-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="sr-only">Next</span>
+                    </a>
+                  </div>
+                  <!--/.Carousel Wrapper-->
+                </div>
+                <div class="col-lg-7">
+                  <h4 class="h4-responsive product-name">
+                    <strong>1225, boul. Robert-Bourassa, PH-3001</strong>
+                  </h4>
+                   <h2 class="h2-responsive">
+                    <span class="price-text">
+                      <strong>$3,399,000</strong>
+                    </span>
+                  </h2> 
+                <!--Property Details Table-->
+                <h3 class="h3-responsive">
+                    <span class="features">
+                      <strong>Features</strong>
+                    </span>
+                <div class="summary">
+                  <span class="item">8 Rooms</span>
+                  <span class="item">4+0 Bedrooms</span>
+                  <span class="item">4+1 Bathroom/Powder Room</span>
+                </div>
+                <table>
+                  <tr>
+                    <td>Condominium Type</td>
+                    <td class="last-child">
+                      <span>Divided</span>
+                    </td>
+                  </tr>
+                  <tr>
+                      <td>Year Built</td>
+                      <td class="last-child">
+                        <span>2013</span>
+                      </td>
+                    </tr>
+                    <tr>
+                        <td>Net Area</td>
+                        <td class="last-child">
+                          <span>2,721 sqft</span>
+                        </td>
+                      </tr>
+                      <tr>
+                          <td>Additional Features</td>
+                          <td class="last-child">
+                            <span>Adapted for reduced mobility</span>
+                          </td>
+                        </tr>  
+                </table>
+                  <!-- Close modal button -->
+                  <div class="card-body">
+                    <div class="text-md-left">
+                      <button type="button" class="btn btn-secondary close-modal" data-dismiss="modal">Close</button>
+                    </div>
+                  </div>
+                  <!-- /.Close modal button -->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Model End-->
+        <div class="icons">
+          <p><i class="fas fa-bed"></i> 4</p>
+          <p><i><i class="fas fa-bath"></i></i> 5</p>
+
+        </div>
+
+      </div>
+
+    </div>
+    <!-- Card -->
+
+
+  </div>
+  <!-- Condo Card deck -->
+  <!-- Income Homes Card deck -->
+  <div class="card-deck">
+
+    <!-- Card -->
+    <div class="card mb-4">
+
+      <!--Card image-->
+      <div class="view overlay">
+        <img class="card-img-top" src="./img/houses/plex/rue-louvois/rue-louvois.jpg" alt="duplex-rue-de-louvois">
+        <a href="#!">
+          <div class="mask rgba-white-slight"></div>
+        </a>
+        <div class="property-type">
+          <h4>duplex</h4>
+        </div>
+      </div>
+
+      <!--Card content-->
+      <div class="card-body">
+
+        <!--Title-->
+        <h4 class="card-title">Saint-Leonard (Montreal)</h4>
+        <!--Text-->
+        <p class="card-text">6100 - 6102, Rue de Louvois</p>
+        <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
+        <p class="price">$649,900</p>
+        <button type="button" class="btn details-btn btn-md" data-toggle="modal"
+        data-target="#louvois-details">Details</button>
+        <!-- Modal -->
+        <div class="modal fade" id="louvois-details" tabindex="-1" role="dialog" aria-labelledby="louvois-details"
+        aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+          <div class="modal-content">
+            <div class="modal-body">
+              <div class="row">
+                <div class="col-lg-5">
+                  <!--Carousel Wrapper-->
+                  <div id="carousel-thumb" class="carousel slide carousel-fade carousel-thumbnails"
+                    data-ride="carousel">
+                    <!--Slides-->
+                    <div class="carousel-inner" role="listbox">
+                      <div class="carousel-item active">
+                        <img class="d-block w-100" src="./img/houses/plex/rue-louvois/louvois-living-room.jpg"
+                          alt="First slide">
+                      </div>
+                      <div class="carousel-item">
+                        <img class="d-block w-100" src="./img/houses/plex/rue-louvois/louvois-kitchen.jpg"
+                          alt="Second slide">
+                      </div>
+                      <div class="carousel-item">
+                        <img class="d-block w-100" src="./img/houses/plex/rue-louvois/louvois-backyard.jpg"
+                          alt="Third slide">
+                      </div>
+                    </div>
+                    <!--/.Slides-->
+                    <!--Controls-->
+                    <a class="carousel-control-prev" href="#carousel-thumb" role="button" data-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carousel-thumb" role="button" data-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="sr-only">Next</span>
+                    </a>
+                  </div>
+                  <!--/.Carousel Wrapper-->
+                </div>
+                <div class="col-lg-7">
+                  <h4 class="h4-responsive product-name">
+                    <strong>6100 - 6102, Rue de Louvois</strong>
+                  </h4>
+                   <h2 class="h2-responsive">
+                    <span class="price-text">
+                      <strong>$649,900</strong>
+                    </span>
+                  </h2> 
+                <!--Property Details Table-->
+                <h3 class="h3-responsive">
+                    <span class="features">
+                      <strong>Features</strong>
+                    </span>
+                    <div class="summary">
+                        <span class="item">5 Rooms</span>
+                        <span class="item">3+0 Bedrooms</span>
+                        <span class="item">1+0 Bathroom/Powder Room</span>
+                      </div>    
+                <table>
+                  <tr>
+                    <td>Building Type</td>
+                    <td class="last-child">
+                      <span>Semi-detached</span>
+                    </td>
+                  </tr>
+                  <tr>
+                      <td>Year Built</td>
+                      <td class="last-child">
+                        <span>1967</span>
+                      </td>
+                    </tr>
+                    <tr>
+                        <td>Residential Units</td>
+                        <td class="last-child">
+                          <span>1 x 3<sup>1/2</sup>, 2 x 5<sup>1/2</sup></span>
+                        </td>
+                      </tr>
+                      <tr>
+                          <td>Potential Gross Revenue</td>
+                          <td class="last-child">
+                            <span>$29,400</span>
+                          </td>
+                        </tr>  
+                </table>
+                  <!-- Close modal button -->
+                  <div class="card-body">
+                    <div class="text-md-left">
+                      <button type="button" class="btn btn-secondary close-modal" data-dismiss="modal">Close</button>
+                    </div>
+                  </div>
+                  <!-- /.Close modal button -->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Model End-->
+        <div class="icons">
+          <p><i class="fas fa-bed"></i> 3</p>
+          <p><i><i class="fas fa-bath"></i></i> 1</p>
+
+        </div>
+
+      </div>
+
+    </div>
+    <!-- Card -->
+
+    <!-- Card -->
+    <div class="card mb-4">
+
+      <!--Card image-->
+      <div class="view overlay">
+        <img class="card-img-top" src="./img/houses/plex/rue-despreaux/rue-desperaux-frontage.jpg"
+          alt="triplex-rue-despreaux">
+        <a href="#!">
+          <div class="mask rgba-white-slight"></div>
+        </a>
+        <div class="property-type">
+          <h4>Triplex</h4>
+        </div>
+      </div>
+
+      <!--Card content-->
+      <div class="card-body">
+
+        <!--Title-->
+        <h4 class="card-title">Saint-Leonard (Montreal)</h4>
+        <!--Text-->
+        <p class="card-text">6215 - 6219, Rue Despreaux</p>
+        <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
+        <p class="price">$779,700</p>
+        <button type="button" class="btn details-btn btn-md" data-toggle="modal"
+        data-target="#despreaux-details">Details</button>
+        <!-- Modal -->
+        <div class="modal fade" id="despreaux-details" tabindex="-1" role="dialog" aria-labelledby="despreaux-details"
+        aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+          <div class="modal-content">
+            <div class="modal-body">
+              <div class="row">
+                <div class="col-lg-5">
+                  <!--Carousel Wrapper-->
+                  <div id="carousel-thumb" class="carousel slide carousel-fade carousel-thumbnails"
+                    data-ride="carousel">
+                    <!--Slides-->
+                    <div class="carousel-inner" role="listbox">
+                      <div class="carousel-item active">
+                        <img class="d-block w-100" src="./img/houses/plex/rue-despreaux/desperaux-living-room.jpg"
+                          alt="First slide">
+                      </div>
+                      <div class="carousel-item">
+                        <img class="d-block w-100" src="./img/houses/plex/rue-despreaux/desperaux-kitchen.jpg"
+                          alt="Second slide">
+                      </div>
+                      <div class="carousel-item">
+                        <img class="d-block w-100" src="./img/houses/plex/rue-despreaux/desperaux-backyard.jpg"
+                          alt="Third slide">
+                      </div>
+                    </div>
+                    <!--/.Slides-->
+                    <!--Controls-->
+                    <a class="carousel-control-prev" href="#carousel-thumb" role="button" data-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carousel-thumb" role="button" data-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="sr-only">Next</span>
+                    </a>
+                  </div>
+                  <!--/.Carousel Wrapper-->
+                </div>
+                <div class="col-lg-7">
+                  <h4 class="h4-responsive product-name">
+                    <strong>6215 - 6219, Rue Despreaux</strong>
+                  </h4>
+                   <h2 class="h2-responsive">
+                    <span class="price-text">
+                      <strong>$779,700</strong>
+                    </span>
+                  </h2> 
+                <!--Property Details Table-->
+                <h3 class="h3-responsive">
+                    <span class="features">
+                      <strong>Features</strong>
+                    </span>
+                    <div class="summary">
+                        <span class="item">8 Rooms</span>
+                        <span class="item">4+0 Bedrooms</span>
+                        <span class="item">4+0 Bathroom/Powder Room</span>
+                      </div>    
+                <table>
+                  <tr>
+                    <td>Building Type</td>
+                    <td class="last-child">
+                      <span>Semi-detached</span>
+                    </td>
+                  </tr>
+                  <tr>
+                      <td>Year Built</td>
+                      <td class="last-child">
+                        <span>1968</span>
+                      </td>
+                    </tr>
+                    <tr>
+                        <td>Residential Units</td>
+                        <td class="last-child">
+                          <span>2 x 4<sup>1/2</sup>, 1 x 8<sup>1/2</sup></span>
+                        </td>
+                      </tr>
+                      <tr>
+                          <td>Potential Gross Revenue</td>
+                          <td class="last-child">
+                            <span>$37,200</span>
+                          </td>
+                        </tr>  
+                </table>
+                  <!-- Close modal button -->
+                  <div class="card-body">
+                    <div class="text-md-left">
+                      <button type="button" class="btn btn-secondary close-modal" data-dismiss="modal">Close</button>
+                    </div>
+                  </div>
+                  <!-- /.Close modal button -->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Model End-->
+        <div class="icons">
+          <p><i class="fas fa-bed"></i> 4</p>
+          <p><i><i class="fas fa-bath"></i></i> 4</p>
+
+        </div>
+
+      </div>
+
+    </div>
+    <!-- Card -->
+    <!-- Card -->
+    <div class="card mb-4">
+
+      <!--Card image-->
+      <div class="view overlay">
+        <img class="card-img-top" src="./img/houses/plex/rue-de-lambarene/rue-de-lambarene-frontage.jpg"
+          alt="five-plex-rue-de-lambarene">
+        <a href="#!">
+          <div class="mask rgba-white-slight"></div>
+        </a>
+        <div class="property-type">
+          <h4>5plex</h4>
+        </div>
+      </div>
+
+      <!--Card content-->
+      <div class="card-body">
+
+        <!--Title-->
+        <h4 class="card-title">Saint-Leonard (Montreal)</h4>
+        <!--Text-->
+        <p class="card-text">5070 - 5076, Rue de Lambarene</p>
+        <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
+        <p class="price">$998,000</p>
+        <button type="button" class="btn details-btn btn-md" data-toggle="modal"
+        data-target="#lambarene-details">Details</button>
+        
+            <!-- Modal -->
+        <div class="modal fade" id="lambarene-details" tabindex="-1" role="dialog" aria-labelledby="lambarene-details"
+        aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+          <div class="modal-content">
+            <div class="modal-body">
+              <div class="row">
+                <div class="col-lg-5">
+                  <!--Carousel Wrapper-->
+                  <div id="carousel-thumb" class="carousel slide carousel-fade carousel-thumbnails"
+                    data-ride="carousel">
+                    <!--Slides-->
+                    <div class="carousel-inner" role="listbox">
+                      <div class="carousel-item active">
+                        <img class="d-block w-100" src="./img/houses/plex/rue-de-lambarene/lambarene-living-room.jpg"
+                          alt="First slide">
+                      </div>
+                      <div class="carousel-item">
+                        <img class="d-block w-100" src="./img/houses/plex/rue-de-lambarene/lambarene-kitchen.jpg"
+                          alt="Second slide">
+                      </div>
+                      <div class="carousel-item">
+                        <img class="d-block w-100" src="./img/houses/plex/rue-de-lambarene/lambarene-backyard.jpg"
+                          alt="Third slide">
+                      </div>
+                    </div>
+                    <!--/.Slides-->
+                    <!--Controls-->
+                    <a class="carousel-control-prev" href="#carousel-thumb" role="button" data-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carousel-thumb" role="button" data-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="sr-only">Next</span>
+                    </a>
+                  </div>
+                  <!--/.Carousel Wrapper-->
+                </div>
+                <div class="col-lg-7">
+                  <h4 class="h4-responsive product-name">
+                    <strong>5070 - 5076, Rue de Lambarene</strong>
+                  </h4>
+                   <h2 class="h2-responsive">
+                    <span class="price-text">
+                      <strong>$998,000</strong>
+                    </span>
+                  </h2> 
+                <!--Property Details Table-->
+                <h3 class="h3-responsive">
+                    <span class="features">
+                      <strong>Features</strong>
+                    </span>
+                    <div class="summary">
+                        <span class="item">6 Rooms</span>
+                        <span class="item">4+0 Bedrooms</span>
+                        <span class="item">1+0 Bathroom/Powder Room</span>
+                      </div>    
+                <table>
+                  <tr>
+                    <td>Building Type</td>
+                    <td class="last-child">
+                      <span>Semi-detached</span>
+                    </td>
+                  </tr>
+                  <tr>
+                      <td>Year Built</td>
+                      <td class="last-child">
+                        <span>1972</span>
+                      </td>
+                    </tr>
+                    <tr>
+                        <td>Residential Units</td>
+                        <td class="last-child">
+                          <span>3 x 4<sup>1/2</sup>, 1 x 5<sup>1/2</sup>,1 x 6<sup>1/2</sup></span>
+                        </td>
+                      </tr>
+                      <tr>
+                          <td>Potential Gross Revenue</td>
+                          <td class="last-child">
+                            <span>$58,000</span>
+                          </td>
+                        </tr>  
+                </table>
+                  <!-- Close modal button -->
+                  <div class="card-body">
+                    <div class="text-md-left">
+                      <button type="button" class="btn btn-secondary close-modal" data-dismiss="modal">Close</button>
+                    </div>
+                  </div>
+                  <!-- /.Close modal button -->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Model End-->
+         <div class="icons">
+          <p><i class="fas fa-bed"></i> 4</p>
+          <p><i><i class="fas fa-bath"></i></i> 1</p>
+
+        </div>
+
+      </div>
+
+    </div>
+    <!-- Card -->
+
+
+  </div>
+  <!-- Income Homes Card deck -->
+
+
+  <!-- Footer -->
+  <footer class="page-footer font-small stylish-color-dark pt-4">
+
+    <!-- Footer Links -->
+    <div class="container text-center text-md-left footer-container">
+
+      <!-- Grid row -->
+      <div class="row">
+
+        <!-- Grid column -->
+        <div class="col-md-4 mx-auto">
+
+          <!-- Content -->
+          <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Our Company</h5>
+          <p id="aboutCompany">Expert realtors to help you get the most value from your real estate investment.</p>
+
+        </div>
+        <!-- Grid column -->
+
+        <hr class="clearfix w-100 d-md-none footer-hr">
+
+        <!-- Grid column -->
+        <div class="col-md-2 mx-auto">
+
+          <!-- Links -->
+          <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Clients</h5>
+
+          <ul class="list-unstyled footer-list">
+            <li>
+              <a href="#!">Buy from us</a>
+            </li>
+            <li>
+              <a href="#!">Sell with us</a>
+            </li>
+            <li>
+              <a href="#!">Tools</a>
+            </li>
+            <li>
+              <a href="#!">Sitemap</a>
+            </li>
+          </ul>
+
+        </div>
+        <!-- Grid column -->
+
+        <hr class="clearfix w-100 d-md-none">
+
+        <!-- Grid column -->
+        <div class="col-md-2 mx-auto">
+
+          <!-- Links -->
+          <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Agents</h5>
+
+          <ul class="list-unstyled footer-list">
+            <li>
+              <a href="#!">Realtor Login</a>
+            </li>
+            <li>
+              <a href="#!">Careers</a>
+            </li>
+          </ul>
+
+        </div>
+        <!-- Grid column -->
+
+        <hr class="clearfix w-100 d-md-none">
+
+        <!-- Grid column -->
+        <div class="col-md-2 mx-auto">
+
+          <!-- Links -->
+          <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Company</h5>
+
+          <ul class="list-unstyled footer-list">
+            <li>
+              <a href="#!">Find An Office</a>
+            </li>
+            <li>
+              <a href="#!">Agent Directory</a>
+            </li>
+            <li>
+              <a href="#!">Privacy Policy</a>
+            </li>
+          </ul>
+
+        </div>
+        <!-- Grid column -->
+
+      </div>
+      <!-- Grid row -->
+
+    </div>
+    <!-- Footer Links -->
+
+    <hr>
+
+    <!-- Social buttons -->
+    <ul class="list-unstyled list-inline text-center footer-media">
+      <li class="list-inline-item">
+        <a class="btn-floating btn-fb mx-1">
+          <i class="fab fa-facebook-f"> </i>
+        </a>
+      </li>
+      <li class="list-inline-item">
+        <a class="btn-floating btn-tw mx-1">
+          <i class="fab fa-twitter"> </i>
+        </a>
+      </li>
+      <li class="list-inline-item">
+        <a class="btn-floating btn-yt mx-1">
+          <i class="fab fa-youtube"></i>
+        </a>
+      </li>
+      <li class="list-inline-item">
+        <a class="btn-floating btn-pin mx-1">
+          <i class="fab fa-pinterest"></i>
+        </a>
+      </li>
+      <li class="list-inline-item">
+        <a class="btn-floating btn-gram mx-1">
+          <i class="fab fa-instagram"></i>
+        </a>
+      </li>
+    </ul>
+
+
+  </footer>
+
+
+  <!--CUSTOM JS FILE IMPORT-->
+  <script src="./js/script.js"></script>
+
+
+
+  <!-- JQUERY, POPPER.JS AND MINIFIED JAVASCRIPT CDNs REQUIRED FOR BOOTSTRAP 4-->
+
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+
+
+
+</body>
+
+</html>
